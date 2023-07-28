@@ -35,10 +35,19 @@ h6 {
 
 #province {
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#province:hover {
+  transform: translateX(-5px);
 }
 
 .bgcolor-dark {
   background-color: var(--color-bg-dark);
+}
+
+.bgcolor-normal {
+  background-color: var(--color-bg);
 }
 
 .weather-icon {

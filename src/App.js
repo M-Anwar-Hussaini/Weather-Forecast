@@ -1,3 +1,5 @@
+import Navbar from './components/Navbar';
+
 export default function App() {
-  return <h2>Weather Forecast</h2>;
+  return <Navbar />;
 }

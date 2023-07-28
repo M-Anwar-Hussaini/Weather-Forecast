@@ -7,8 +7,9 @@
 }
 
 :root {
-  --primary-color: #4369b2;
-  --secondary-color: #ec4c8a;
+  --color-text: #4369b2;
+  --color-bg: #ec4c8a;
+  --color-bg-dark: #cf4377;
   --light-color: #fff;
 }
 
@@ -16,7 +17,7 @@
   max-width: 576px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
-  background-color: var(--secondary-color);
+  background-color: var(--color-bg);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -30,4 +31,17 @@ h4,
 h5,
 h6 {
   font-weight: bold !important;
+}
+
+#province {
+  cursor: pointer;
+}
+
+.bgcolor-dark {
+  background-color: var(--color-bg-dark);
+}
+
+.weather-icon {
+  height: 48px;
+  filter: invert(80%);
 }

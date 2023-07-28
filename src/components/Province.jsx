@@ -3,10 +3,10 @@ import Type from 'prop-types';
 import ReactLoading from 'react-loading';
 
 export default function Province({
-  province, icon, temprature, isLoading,
+  province, icon, temprature, isLoading, className,
 }) {
   return (
-    <figure className="p-3 bgcolor-dark" id="province">
+    <figure className={`p-3 m-0 ${className}`} id="province">
       {
           isLoading ? (
             <div className="d-flex align-items-center justify-content-center">
@@ -14,20 +14,18 @@ export default function Province({
             </div>
           )
             : (
-              <div className="d-flex align-items-center justify-content-between">
+              <div className="row align-items-center justify-content-between">
 
-                <h2>{province}</h2>
-                <WeatherIcon name={icon} className="weather-icon" />
-                <span>
+                <span className="col-5 fs-5 fw-bold">{province}</span>
+                <WeatherIcon name={icon} className="weather-icon col-2" />
+                <span className="col-5">
                   Temprature:&nbsp;
                   {temprature}
                   &deg;C
                 </span>
               </div>
             )
-
         }
-
     </figure>
   );
 }
@@ -37,4 +35,5 @@ Province.propTypes = {
   icon: Type.string.isRequired,
   temprature: Type.number.isRequired,
   isLoading: Type.bool.isRequired,
+  className: Type.bool.isRequired,
 };

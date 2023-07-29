@@ -52,5 +52,5 @@ h6 {
 
 .weather-icon {
   height: 48px;
-  filter: invert(80%);
+  filter: invert(100%);
 }

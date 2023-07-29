@@ -10,7 +10,7 @@ function getFormattedData(data) {
   };
 }
 
-const data = [
+const coordinates = [
   { lat: '34.5253', lng: '69.1783' },
   { lat: '31.6200', lng: '65.7158' },
   { lat: '34.3419', lng: '62.2031' },
@@ -34,7 +34,6 @@ const data = [
   { lat: '37.1166', lng: '70.5800' },
   { lat: '34.9867', lng: '63.1292' },
   { lat: '36.2214', lng: '65.9278' },
-  { lat: '35.0206', lng: '69.3306' },
   { lat: '34.8742', lng: '71.1528' },
   { lat: '34.3972', lng: '68.8697' },
   { lat: '35.3128', lng: '69.5158' },
@@ -57,7 +56,7 @@ const data = [
 
 export default async function getAllInfo() {
   try {
-    const arr = data.map(async (pro) => {
+    const arr = coordinates.map(async (pro) => {
       const base = 'https://api.openweathermap.org/data/2.5/weather?';
       const coordinate = `lat=${pro.lat}&lon=${pro.lng}`;
       const apiId = '&appid=e7e6928cc5d52c53ee37d5011f6f8f82&units=metric';

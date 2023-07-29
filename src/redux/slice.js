@@ -21,9 +21,32 @@ const slice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getApiData.fulfilled, (state, action) => {
-      state.provinces = action.payload;
-    });
+    builder
+      .addCase(getApiData.fulfilled, (state) => {
+        const updated = {
+          ...state,
+          isLoading: true,
+        };
+        return updated;
+      })
+
+      .addCase(getApiData.fulfilled, (state, action) => {
+        const updated = {
+          ...state,
+          provinces: action.payload,
+          isLoading: false,
+        };
+        return updated;
+      })
+
+      .addCase(getApiData.rejected, (state) => {
+        const update = {
+          ...state,
+          isLoading: false,
+          hasError: true,
+        };
+        return update;
+      });
   },
 });
 

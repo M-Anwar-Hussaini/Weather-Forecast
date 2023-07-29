@@ -22,7 +22,7 @@ const slice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getApiData.fulfilled, (state) => {
+      .addCase(getApiData.pending, (state) => {
         const updated = {
           ...state,
           isLoading: true,

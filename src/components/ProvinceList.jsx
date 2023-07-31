@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import Loading from 'react-loading';
 import { Link } from 'react-router-dom';
 import Province from './Province';
 import { getApiData } from '../redux/slice';
+import { getBasicData } from '../redux/helper';
+import Loading from './Loading';
 
 const linkStyle = {
   color: '#fff',
@@ -19,27 +20,26 @@ export default function ProvinceList() {
 
   if (isLoading) {
     return (
-      <div className="d-flex flex-column align-items-center justify-content-center gap3 p-3 bgcolor-dark">
-        <Loading type="spokes" />
-        <span>Please wait...</span>
-      </div>
+      <Loading />
     );
   }
 
   return (
     <div className="row gx-0 border-top">
-      {provinces.map((pro, i) => (
-        <Link to={`details/${pro.province}`} key={pro.province} style={linkStyle} className="col-6">
-          <Province
-            icon={pro.icon}
-            isLoading={false}
-            province={pro.province}
-            temprature={pro.temprature}
-            className={[1, 2].includes(i % 4) ? 'bgcolor-normal' : 'bgcolor-dark'}
-            description={pro.description}
-          />
-        </Link>
-      ))}
+      {provinces.map((all, i) => {
+        const pro = getBasicData(all);
+        return (
+          <Link to={`details/${pro.province}`} key={pro.province} style={linkStyle} className="col-6">
+            <Province
+              icon={pro.icon}
+              province={pro.province}
+              temprature={pro.temprature}
+              className={[1, 2].includes(i % 4) ? 'bgcolor-normal' : 'bgcolor-dark'}
+              description={pro.description}
+            />
+          </Link>
+        );
+      })}
     </div>
   );
 }

@@ -33,13 +33,22 @@ h6 {
   font-weight: bold !important;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  transition: 0.2s ease;
+}
+
 #province {
   cursor: pointer;
   transition: 0.2s ease;
 }
 
-#province:hover {
-  transform: translateX(-5px);
+#province:hover,
+li:hover {
+  background-color: #8e2e53;
 }
 
 .bgcolor-dark {

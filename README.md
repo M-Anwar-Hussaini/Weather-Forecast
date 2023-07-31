@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Weather Forcast ](#-weather-forcast-)
+- [📖 Weather Forecast ](#-weather-forecast-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Weather Forcast <a name="about-project"></a>
+# 📖 Weather Forecast <a name="about-project"></a>
 
-**Weather Forcast** is the project that is built with react and shows the detailed information about rockets, dragons, and missions that a traveler need to travel to any desired planet.
+**Weather Forecast** is a user-friendly weather web application that provides real-time weather updates for major cities in Afghanistan. With a clean and intuitive interface, users can access accurate details on temperature, humidity, wind speed, and atmospheric pressure of their desired city, making it easier to plan their day effectively. The platform fetches data from reliable weather APIs to ensure up-to-date information. Designed for all tech-savviness levels, it offers a seamless experience on various devices. Stay informed and make the most of every day with our comprehensive weather forecast at your fingertips. Embrace the power of knowledge and explore our application now! ☀️🌧️🌪️
 
 ## 🛠 Built With <a name="built-with"></a>
 

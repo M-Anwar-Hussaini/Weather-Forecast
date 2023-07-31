@@ -16,7 +16,7 @@ export default function ProvinceList() {
   const { provinces, isLoading } = useSelector((store) => store.provinces);
   const dispatch = useDispatch();
 
-  const filtered = provinces.filter((el) => el.name.toLowerCase().includes(result));
+  const filtered = provinces.filter((el) => el.name.toLowerCase().includes(result.toLowerCase()));
 
   useEffect(() => {
     if (provinces.length === 0) dispatch(getApiData());

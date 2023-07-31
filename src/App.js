@@ -1,3 +1,11 @@
+import Navbar from './components/Navbar';
+import TheRouter from './pages/TheRouters';
+
 export default function App() {
-  return <h2>Weather Forecast</h2>;
+  return (
+    <>
+      <Navbar />
+      <TheRouter />
+    </>
+  );
 }

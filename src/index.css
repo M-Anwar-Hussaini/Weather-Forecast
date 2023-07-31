@@ -1,9 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-h2 {
-  color: green;
+:root {
+  --color-text: #4369b2;
+  --color-bg: #ec4c8a;
+  --color-bg-dark: #cf4377;
+  --light-color: #fff;
+}
+
+#root {
+  max-width: 576px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  transition: 0.2s ease;
+}
+
+#province {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#province:hover,
+li:hover {
+  background-color: #8e2e53;
+}
+
+.bgcolor-dark {
+  background-color: var(--color-bg-dark);
+}
+
+.bgcolor-normal {
+  background-color: var(--color-bg);
+}
+
+.weather-icon {
+  height: 48px;
+  filter: invert(100%);
 }

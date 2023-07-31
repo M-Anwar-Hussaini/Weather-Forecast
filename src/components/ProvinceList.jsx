@@ -14,8 +14,8 @@ export default function ProvinceList() {
   const { provinces, isLoading } = useSelector((store) => store.provinces);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getApiData());
-  }, [dispatch]);
+    if (provinces.length === 0) dispatch(getApiData());
+  }, [dispatch, provinces.length]);
 
   if (isLoading) {
     return (

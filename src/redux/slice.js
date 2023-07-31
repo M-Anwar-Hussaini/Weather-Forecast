@@ -33,7 +33,7 @@ const slice = createSlice({
       .addCase(getApiData.fulfilled, (state, action) => {
         const updated = {
           ...state,
-          provinces: action.payload,
+          provinces: state.provinces.length === 0 ? action.payload : state.provinces,
           isLoading: false,
         };
         return updated;

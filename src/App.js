@@ -1,13 +1,11 @@
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import ProvinceList from './components/ProvinceList';
+import TheRouter from './components/TheRouters';
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <ProvinceList />
+      <TheRouter />
     </>
   );
 }

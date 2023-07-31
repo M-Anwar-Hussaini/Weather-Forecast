@@ -5,7 +5,7 @@ export default function MyNavbar() {
   return (
     <header>
       <nav className="d-flex align-items-center justify-content-between p-2 shadow">
-        <Link to="/details">
+        <Link to="/">
           <FaAngleLeft fontSize="24px" cursor="pointer" color="#fff" />
         </Link>
         <div><h2>Afghanistan</h2></div>

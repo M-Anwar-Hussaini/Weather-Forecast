@@ -225,7 +225,8 @@ If you like this project, kindly drop a start for the [repository](https://githu
 **I would like to thank the following individuals and organizations for their contribution to this project.**
 
 - I would like to my heartfelt gratitude to [**Microvere**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for the invaluable learning experience they have provided. The supportive community, dedicated mentors, and remote collaboration opportunities have enhanced my technical skills and prepared me for real-world projects. I extend my appreciation to the mentors and staff members for their guidance and support. The friendships and knowledge sharing within the Microverse community have made this journey truly rewarding.
-- I would like to express my heartfelt gratitude to Behance for providing the amazing design inspiration that served as the foundation for my weather web application. Especial thank to its designer **Nelson Sakwa**.
+
+- I would like to express my heartfelt gratitude to Behance for providing the amazing [design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) inspiration that served as the foundation for my weather web application. Especial thank to its designer **Nelson Sakwa**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

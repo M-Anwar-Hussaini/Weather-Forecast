@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import ProvinceHeader from '../components/ProvinceHeader';
 import { setHeader } from '../redux/slice';
+import ProvinceDetails from '../components/ProvinceDetails';
 
 export default function Details() {
   const dispatch = useDispatch();
@@ -12,8 +13,9 @@ export default function Details() {
   }, [dispatch, id]);
 
   return (
-    <main className="p-3">
+    <main>
       <ProvinceHeader />
+      <ProvinceDetails />
     </main>
   );
 }

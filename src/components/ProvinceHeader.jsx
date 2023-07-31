@@ -1,4 +1,4 @@
-import { Carousel } from 'bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 export default function ProvinceHeader() {
   return (

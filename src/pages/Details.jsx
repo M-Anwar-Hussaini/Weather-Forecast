@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import ProvinceHeader from './ProvinceHeader';
+import ProvinceHeader from '../components/ProvinceHeader';
 
-export default function ProvinceDetails() {
+export default function Details() {
   const { provinces } = useSelector((store) => store.provinces);
 
   const { id } = useParams();

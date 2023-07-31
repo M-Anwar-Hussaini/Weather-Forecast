@@ -27,15 +27,15 @@ export default function ProvinceList() {
   }
 
   return (
-    <div>
+    <div className="row gx-0 border-top">
       {provinces.map((pro, i) => (
-        <Link to={`details/${pro.province}`} key={pro.province} style={linkStyle}>
+        <Link to={`details/${pro.province}`} key={pro.province} style={linkStyle} className="col-6">
           <Province
             icon={pro.icon}
             isLoading={false}
             province={pro.province}
             temprature={pro.temprature}
-            className={i % 2 === 1 ? 'bgcolor-normal' : 'bgcolor-dark'}
+            className={[1, 2].includes(i % 4) ? 'bgcolor-normal' : 'bgcolor-dark'}
             description={pro.description}
           />
         </Link>

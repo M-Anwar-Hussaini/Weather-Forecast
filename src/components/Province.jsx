@@ -6,28 +6,29 @@ export default function Province({
   province, icon, temprature, className, description,
 }) {
   return (
-    <figure className={`px-1 py-3 m-0 ${className}`} id="province">
+    <figure className={`p-3 m-0 ${className}`} id="province">
       <div className="row align-items-center justify-content-between">
+        <div className="col-6 d-flex flex-column gap-3">
+          <div>
+            <div className="d-flex gap-2 align-items-center">
+              <FaLocationDot fontSize={24} />
+              <span className="fs-6 fw-bold">{province}</span>
+            </div>
+          </div>
 
-        <div className="col-5">
-          <div className="d-flex gap-2 align-items-center">
-            <FaLocationDot fontSize={24} />
-            <span className="fs-5 fw-bold">{province}</span>
+          <div className="d-flex align-items-center gap-2">
+            <FaTemperatureArrowUp fontSize={24} />
+            <span>
+              {temprature}
+              &deg;C
+            </span>
           </div>
         </div>
-
-        <div className="col-3 d-flex flex-column align-items-center">
+        <div className="col-6 d-flex flex-column align-items-center">
           <WeatherIcon name={icon} className="weather-icon" />
           <span>{description}</span>
         </div>
 
-        <div className="col-4 d-flex align-items-center gap-2">
-          <FaTemperatureArrowUp fontSize={24} />
-          <span>
-            {temprature}
-            &deg;C
-          </span>
-        </div>
       </div>
     </figure>
   );

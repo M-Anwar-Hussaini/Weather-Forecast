@@ -1,12 +1,9 @@
-function getFormattedData(data) {
+export function getBasicData(data) {
   return {
     province: data.name,
     description: data.weather[0].description,
     icon: data.weather[0].icon,
     temprature: data.main.feels_like,
-    wind: data.wind.speed,
-    country: data.sys.country,
-    isLoading: false,
   };
 }
 
@@ -63,7 +60,7 @@ export default async function getAllInfo() {
 
       const res = await fetch(`${base}${coordinate}${apiId}`);
       const data = await res.json();
-      return getFormattedData(data);
+      return data;
     });
 
     return Promise.all(arr);
@@ -116,3 +113,19 @@ export const sample = {
   name: 'Kabul',
   cod: 200,
 };
+
+export function getDetailedData(data) {
+  return {
+    'Province/City': data.name,
+    Country: 'Afghanistan',
+    Temprature: `${data.main.feels_like} °C`,
+    Status: data.weather[0].main,
+    'Wind speed': `${sample.wind.speed} m/s`,
+    'Wind Direction': `${sample.wind.deg}°`,
+    Latitude: data.coord.lat.toFixed(2),
+    Longitude: data.coord.lon.toFixed(2),
+    Pressure: `${data.main.pressure} milibar`,
+    Humidity: `${data.main.humidity} %`,
+    'Ground Pressure': `${data.main.grnd_level} milibar`,
+  };
+}

@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Space Travelers Hub ](#-space-travelers-hub-)
+- [📖 Weather Forcast ](#-weather-forcast-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Travelers Hub <a name="about-project"></a>
+# 📖 Weather Forcast <a name="about-project"></a>
 
-**Space Travelers Hub** is the project that is built with react and shows the detailed information about rockets, dragons, and missions that a traveler need to travel to any desired planet.
+**Weather Forcast** is the project that is built with react and shows the detailed information about rockets, dragons, and missions that a traveler need to travel to any desired planet.
 
 ## 🛠 Built With <a name="built-with"></a>
 

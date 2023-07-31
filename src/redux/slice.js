@@ -12,6 +12,7 @@ export const getApiData = createAsyncThunk('provinces/getData', async () => {
 
 const initialState = {
   provinces: [],
+  header: 'Afghanistan',
   isLoading: false,
   hasError: false,
 };
@@ -19,7 +20,15 @@ const initialState = {
 const slice = createSlice({
   name: 'provinces',
   initialState,
-  reducers: {},
+  reducers: {
+    setHeader: (state, action) => {
+      const newState = {
+        ...state,
+        header: action.payload,
+      };
+      return newState;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getApiData.pending, (state) => {
@@ -51,3 +60,4 @@ const slice = createSlice({
 });
 
 export default slice.reducer;
+export const { setHeader } = slice.actions;

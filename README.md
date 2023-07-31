@@ -96,7 +96,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- ✅ Click [here](https://weather-forecast-7aj4.onrender.com/) to see the live demo.
+- ✅ Click [here](https://weather-forecast-7aj4.onrender.com/) to see the live demo and watch this [video](https://drive.google.com/file/d/1ASjw86RXEpW6nJ7wqkIjQoIDJClAcWtf/view?usp=sharing) presentation for more info..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

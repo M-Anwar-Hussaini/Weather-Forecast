@@ -1,13 +1,16 @@
-import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import ProvinceHeader from '../components/ProvinceHeader';
+import { setHeader } from '../redux/slice';
 
 export default function Details() {
-  const { provinces } = useSelector((store) => store.provinces);
-
+  const dispatch = useDispatch();
   const { id } = useParams();
-  const province = provinces.find((pro) => pro.province === id);
-  console.log(province);
+  useEffect(() => {
+    dispatch(setHeader(id));
+  }, [dispatch, id]);
+
   return (
     <main className="p-3">
       <ProvinceHeader />

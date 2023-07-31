@@ -96,7 +96,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- ✅ Click [here](https://space-travelers-hub-fn9i.onrender.com/) to see the live demo.
+- ✅ Click [here](https://weather-forecast-7aj4.onrender.com/) to see the live demo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
